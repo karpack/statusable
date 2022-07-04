@@ -1,0 +1,60 @@
+{
+    "name": "karpack/statusable",
+    "description": "Centralized status management module",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/karpack/statusable/issues",
+        "source": "https://github.com/karpack/statusable"
+    },
+    "keywords": ["laravel", "statuses"],
+    "authors": [
+        {
+            "name": "Kalesh Kaladharan",
+            "email": "kalesh.13@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "illuminate/broadcasting": ">=7.0",
+        "illuminate/console": ">=7.0",
+        "illuminate/contracts": ">=7.0",
+        "illuminate/database": ">=7.0",
+        "illuminate/http": ">=7.0",
+        "illuminate/queue": ">=7.0",
+        "illuminate/support": ">=7.0",
+        "karpack/contracts": "^1.0",
+        "karpack/hexagon": "^1.0",
+        "karpack/support": "^1.0",
+        "karpack/translations": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Karpack\\Statusable\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Karpack\\Statusable\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Karpack\\Statusable\\StatusServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
